@@ -1,0 +1,32 @@
+<!-- NAVIGATION TO USE -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+	<div class="container">
+		<a class="navbar-brand" href="{{ url_for('shop.home') }}">
+			Games Shop
+		</a>
+		<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="navbar-collapse collapse" id="navBar">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<a class="nav-link
+					{% if page == 'Main' %}
+						active current-page
+					{% endif %}" href="{{ url_for('shop.home') }}">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link
+					{% if page == 'About' %}
+						active current-page
+					{% endif %}" href="{{ url_for('shop.about') }}">
+						About
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

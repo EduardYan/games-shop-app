@@ -1,0 +1,108 @@
+/* 
+	Custom styles for the shop.
+*/
+
+:root {
+	/* background color to use in navbar and footer */
+	--nav-footer-bg: #434343;
+}
+
+body {
+	background-color: #222;
+}
+
+.navbar {
+	background-color: var(--nav-footer-bg);
+}
+
+#main-container {
+	margin: 3rem auto 7rem;
+}
+
+#into-text {
+	font-size: 1.3rem;
+	/* border-bottom: 1px solid #ccc; */
+}
+
+/* Games view */
+#games-view {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 2em;
+	column-gap: 1.5rem;
+}
+
+#games-view form {
+	background-color: #66c;
+}
+
+
+/* current page or tab */
+.current-page {
+	border-bottom: .5px solid #ccc;
+	animation-name: moveLink;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes moveLink {
+	from {
+		transform: translateX(5%);
+	}
+
+	to {
+		transform: translateX(-5%);
+	}
+}
+
+#main-footer {
+	background-color: var(--nav-footer-bg);
+
+}
+
+/* Sociale links from footer */
+#social-links {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+	#into-text {
+		text-align: center;
+	}
+
+	#games-view {
+		column-gap: 1.5rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 700px) {
+	#into-text {
+		text-align: center;
+	}
+
+	#games-view {
+		column-gap: 1rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 500px) {
+	#into-text {
+		text-align: center;
+	}
+
+	/* change to one column */
+	#games-view {
+		grid-template-columns: 1fr;
+	}
+
+
+}
