@@ -40,7 +40,7 @@ body {
 
 /* current page or tab */
 .current-page {
-	border-bottom: .5px solid #ccc;
+	border-bottom: .5px solid #aaa;
 	animation-name: moveLink;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -62,7 +62,7 @@ body {
 
 }
 
-/* Sociale links from footer */
+/* Sociale links of footer */
 #social-links {
 	display: flex;
 	flex-flow: row wrap;
@@ -80,6 +80,15 @@ body {
 	#games-view {
 		column-gap: 1.5rem;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* remove alls animations and styles */
+	.current-page {
+		animation-name: none;
+		border-bottom: none;
+		animation-duration: none;
+		animation-iteration-count: none;
+		animation-direction: none;
 	}
 }
 
@@ -103,6 +112,4 @@ body {
 	#games-view {
 		grid-template-columns: 1fr;
 	}
-
-
 }

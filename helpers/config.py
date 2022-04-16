@@ -23,8 +23,10 @@ def validate_config_object(object:dict) -> bool:
 	parameter are valid.
 	"""
 
+	# set here the allow keys
 	allow_keys = [
 		'PORT',
+		'DEBUG',
 	]
 
 	for key in allow_keys:
