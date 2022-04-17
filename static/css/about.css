@@ -3,11 +3,29 @@
 */
 
 #main-container {
-	/* fixing the margin of the container */
-	margin-bottom: 16rem;
+  /* fixing the margin of the container */
+  margin-bottom: 16rem;
 }
 
-.card {
-	background-color: rgba(0, 0, 0, .2);
-	height: 300px;
+.card .card-body {
+  display: flex;
+}
+
+.card .card-body img {
+  width: 50%;
+  border-radius: .5rem;
+  margin-right: 1rem;
+}
+
+
+/* Fix Responsive */
+
+@media (max-width: 900px) {
+  .card .card-body {
+    display: block;
+  }
+  .card .card-body img {
+    /* all width for the image */
+    width: 100%;
+  }
 }

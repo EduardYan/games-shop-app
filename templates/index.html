@@ -1,113 +1,87 @@
 <!-- PRINCIPAL PAGE -->
-{% extends 'layout.html' %}
-
-{% block content %}
+{% extends 'layout.html' %} {% block content %}
 
 <p class="text-white text-justify mt-4" id="into-text">
-	Buy the best games quickly, with a click.
+  <i class="fa-solid fa-gamepad"></i> Buy the best games quickly, with a click.
 </p>
 
 <hr class="text-white">
 
 <h2 class="text-white text-center" style="font-weight: lighter;">
-	Games List
+  Games List
 </h2>
 
 
 <!-- GAMES VIEW -->
 <section id="games-view">
-	<form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
-		<div class="card-header">
-			<h3 class="text-white">Minecraft 1.18.2</h3>
-			<input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
-		</div>
-		<div class="card-body">
-			<p class="text-justify text-white">
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			</p>
-		</div>
-		<div class="card-footer">
-			<button type="submit" class="btn btn-success w-100">
-				Buy	
+  <form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
+    <div class="card-header">
+      <h3 class="text-white">Minecraft 1.18.2</h3>
+      <input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
+    </div>
+    <div class="card-body">
+      <p class="text-justify text-white">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque consequuntur architecto hic veritatis minima ratione, ipsa eos doloremque officiis atque iste illum nesciunt corrupti quam aliquam in earum laudantium totam qui maiores porro eveniet nihil!
+        Est error possimus nihil vitae laudantium fugit ab nobis tempora assumenda? Nisi consequatur earum temporibus.
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn w-100">
+        <i class="fa-solid fa-cart-shopping"></i>
 			</button>
-		</div>
-	</form>
-	<form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
-		<div class="card-header">
-			<h3 class="text-white">Granny 3</h3>
-			<input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
-		</div>
-		<div class="card-body">
-			<p class="text-justify text-white">
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			</p>
-		</div>
-		<div class="card-footer">
-			<button type="submit" class="btn btn-success w-100">
-				Buy	
+    </div>
+  </form>
+  <form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
+    <div class="card-header">
+      <h3 class="text-white">Granny 3</h3>
+      <input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
+    </div>
+    <div class="card-body">
+      <p class="text-justify text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit accusantium suscipit fugiat beatae fuga aliquam delectus asperiores accusamus? Eius fugiat quis aspernatur labore a repellendus veniam. Nisi saepe architecto harum error et minus
+        sint laudantium ducimus totam? Recusandae eaque optio quae et. Provident hic sequi placeat fuga possimus delectus!
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn w-100">
+        <i class="fa-solid fa-cart-shopping"></i>
 			</button>
-		</div>
-	</form>
-	<form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
-		<div class="card-header">
-			<h3 class="text-white">Poppy Play Time Cap 2</h3>
-			<input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
-		</div>
-		<div class="card-body">
-			<p class="text-justify text-white">
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			</p>
-		</div>
-		<div class="card-footer">
-			<button type="submit" class="btn btn-success w-100">
-				Buy	
+    </div>
+  </form>
+  <form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
+    <div class="card-header">
+      <h3 class="text-white">Poppy Play Time Cap 2</h3>
+      <input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
+    </div>
+    <div class="card-body">
+      <p class="text-justify text-white">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi alias molestiae reprehenderit, ut, dolores quia totam hic laudantium molestias, maiores blanditiis cumque architecto nihil fugit ducimus qui tempora autem itaque nam? Vitae iusto, vel illum
+        nulla fugiat, est autem eos expedita quos adipisci, temporibus accusamus nesciunt nobis. Ipsam, adipisci itaque?
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn w-100">
+        <i class="fa-solid fa-cart-shopping"></i>
 			</button>
-		</div>
-	</form>
-	<form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
-		<div class="card-header">
-			<h3 class="text-white">GTA 5</h3>
-			<input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
-		</div>
-		<div class="card-body">
-			<p class="text-justify text-white">
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			hola
-			</p>
-		</div>
-		<div class="card-footer">
-			<button type="submit" class="btn btn-success w-100">
-				Buy	
+    </div>
+  </form>
+  <form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
+    <div class="card-header">
+      <h3 class="text-white">GTA 5</h3>
+      <input type="text" name="game-name" style="display: none;" value="Minecraft 1.18.2">
+    </div>
+    <div class="card-body">
+      <p class="text-justify text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae unde accusantium doloribus consequatur at distinctio quam porro sequi ad, quo est iure pariatur modi explicabo magni repellat hic. Laboriosam eaque rem tempora tenetur doloribus cumque placeat
+        maxime deleniti ullam hic laborum, natus pariatur, ab voluptates! Quam maxime accusamus assumenda illum.
+      </p>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn w-100">
+        <i class="fa-solid fa-cart-shopping"></i>
 			</button>
-		</div>
-	</form>
+    </div>
+  </form>
 </section>
 
 

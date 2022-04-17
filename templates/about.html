@@ -1,20 +1,17 @@
 <!-- ABOUT PAGE -->
-{% extends 'layout.html' %}
-
-{% block content %}
+{% extends 'layout.html' %} {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css/about.css') }}">
-<section class="card">
-	<div class="card-header">
-		<h1 class="text-white text-center" style="font-weight: lighter;">
-			Games Shop
-		</h1>
-	</div>
-	<div class="card-body">
-	<p class="lead text-white">
-		Games Shop is a web application
-		for buy games using <span style="border-bottom: .5px solid #999;">no money</span>, if not
-		using starts in a game.
-	</p>
-	</div>
+<section class="card bg-dark">
+  <div class="card-header">
+    <h1 class="text-white text-center" style="font-weight: lighter;">
+      Games Shop
+    </h1>
+  </div>
+  <div class="card-body">
+    <p class="lead text-white text-center">
+      Games Shop is a web application for buy games using <span style="border-bottom: .5px solid #999;">no money</span>, if not using starts in a game.
+    </p>
+    <img src="{{ url_for('static', filename = 'img/about-image.jpg') }}" alt="about-image">
+  </div>
 </section>
 {% endblock %}
