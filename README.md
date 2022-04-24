@@ -23,3 +23,6 @@ __or__
 ```bash
 $ ./main.py
 ```
+
+## Screenshot.
+![screenshot](./doc/screenshot.png)
