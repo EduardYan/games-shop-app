@@ -7,7 +7,7 @@ Web Application for buy games in a shop. Made with python3 and using sqlite3 for
 Create a virtual enviroment or basically install of global form using some packages manager like pip.
 
 ```bash
-$ git clone https://github.com/EduardYan/games-shop
+$ git clone https://github.com/EduardYan/games-shop-app.git
 
 $ cd games-shop
 
