@@ -24,12 +24,12 @@ def validate_config_object(object:dict) -> bool:
 	"""
 
 	# set here the allow keys
-	allow_keys = [
+	ALLOW_KEYS = [
 		'PORT',
 		'DEBUG',
 	]
 
-	for key in allow_keys:
+	for key in ALLOW_KEYS:
 		if key not in object:
 			raise ConfigFileInvalid('The config file is invalid, verify the keys and values.')
 
@@ -42,9 +42,9 @@ def get_config_object() -> dict:
 
 	# path for file
 	CONFIG_PATH = './config.json'
-	CONFIG_FILE = open(CONFIG_PATH, 'r')
-
-	object = load(CONFIG_FILE)
+	# CONFIG_FILE = open(CONFIG_PATH, 'r')
+	with open(CONFIG_PATH, 'r') as f:
+		object = load(f)
 
 	return object
 

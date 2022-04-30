@@ -9,7 +9,10 @@ from flask import (
 	redirect,
 	url_for,
 	request,
+	flash,
 )
+from models.buys import Buy
+from helpers.db import db
 
 
 # routes
@@ -36,9 +39,20 @@ def buy_game():
 	# getting to show
 	game_name = request.form['game-name']
 
-	print(f'Buying {game_name}')
+	buy = Buy(game_name)
 
-	return redirect(url_for('shop.home'))
+	try:
+		db.session.add(buy)
+		db.session.commit()
+
+		# Sending a message
+		flash(f'You bought to {buy.game_name}')
+
+		return redirect(url_for('shop.home'))
+
+	except:
+		print('Some error for save indatabase')
+		return redirect(url_for('shop.home'))
 
 
 @shop_routes.route('/about')

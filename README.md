@@ -1,6 +1,6 @@
 # Games Shop App.
 
-Web Application for buy games in a shop.
+Web Application for buy games in a shop. Made with python3 and using sqlite3 for the database.
 
 ## Manual Installation.
 
@@ -8,13 +8,15 @@ Create a virtual enviroment or basically install of global form using some packa
 
 ```bash
 $ git clone https://github.com/EduardYan/games-shop
+
 $ cd games-shop
-$ pip3 install -r requirements.txt
+
+$ pip3 install -r ./requirements.txt
 ```
 
 ## Configuration.
 
-Edit the file "config.json" for set the port and if the server is running in debug mode.
+Edit the file "config.json" for set the port and if the server is running in debug mode. Also you can set the path for the sqlite database.
 
 ```json
 {

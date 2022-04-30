@@ -1,4 +1,5 @@
 {
-	"PORT": 3000,
-	"DEBUG": 1
+  "PORT": 3000,
+  "DEBUG": 1,
+  "DB_PATH": "./db/buy.db"
 }

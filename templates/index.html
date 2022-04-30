@@ -1,6 +1,8 @@
 <!-- PRINCIPAL PAGE -->
 {% extends 'layout.html' %} {% block content %}
 
+{% include 'partials/_messages.html' %}
+
 <p class="text-white text-justify mt-4" id="into-text">
   <i class="fa-solid fa-gamepad"></i> Buy the best games quickly, with a click.
 </p>
@@ -143,7 +145,7 @@
   <form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
     <div class="card-header">
       <h3 class="text-white">Siren Head Resurrection</h3>
-      <input type="text" name="game-name" style="display: none;" value="siren-head-resurrection">
+      <input type="text" name="game-name" style="display: none;" value="Siren Head Resurrection">
     </div>
     <div class="card-body">
       <p class="text-justify text-white">
@@ -161,7 +163,7 @@
   <form class="card" action="{{ url_for('shop.buy_game') }}" method="POST">
     <div class="card-header">
       <h3 class="text-white">GTA San Andreas Resmastered</h3>
-      <input type="text" name="game-name" style="display: none;" value="gta-san-andreas">
+      <input type="text" name="game-name" style="display: none;" value="GTA San Andreas Remastered">
     </div>
     <div class="card-body">
       <p class="text-justify text-white">
