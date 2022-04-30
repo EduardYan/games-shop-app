@@ -20,8 +20,9 @@ Edit the file "config.json" for set the port and if the server is running in deb
 
 ```json
 {
-	"PORT": 3000,
-	"DEBUG": 1
+  "PORT": 3000,
+  "DEBUG": 1,
+  "DB_PATH": "./db/buy.db"
 }
 ```
 
