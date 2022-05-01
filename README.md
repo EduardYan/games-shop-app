@@ -39,5 +39,7 @@ __or__
 $ ./main.py
 ```
 
+Now the server with the app is running in this direction __http://localhost:YOUR_PORT_SET__
+
 ## Screenshot.
 ![screenshot](./doc/screenshot.png)

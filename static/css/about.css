@@ -17,6 +17,27 @@
   margin-right: 1rem;
 }
 
+#programmer-link {
+  text-decoration: none;
+  color: #5e5eee;
+}
+
+#programmer-link:hover {
+  border-bottom: .5px solid #999;
+}
+
+#programmer-link:active {
+  color: #4e71ed;
+}
+
+#programmer-link:visited {
+  color: #5e5eee;
+}
+
+#programmer-link:focus {
+  background-color: #444;
+}
+
 
 /* Fix Responsive */
 

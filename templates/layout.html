@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Games games Shop shop">
   <title>Games Shop</title>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename = 'favicon.ico') }}" type="image/x-icon">
   <!-- BOOTSTRAP STYLES -->
   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap/bootstrap.min.css') }}">
   <!-- FONT AWESOME -->
@@ -30,7 +32,7 @@
   <script src="{{ url_for('static', filename = 'js/bootstrap/bootstrap.bundle.min.js') }}">
   </script>
   <!-- SCROLL REVEAL -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="{{ url_for('static', filename = 'js/scrollreveal/scrollreveal.js') }}"></script>
   <!-- MAIN SCRIPTS -->
   <script src="{{ url_for('static', filename = 'js/app.js') }}">
   </script>

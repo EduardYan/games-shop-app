@@ -38,8 +38,9 @@ def buy_game():
 
 	# getting to show
 	game_name = request.form['game-name']
+	starts_price = int(request.form['starts-price'])
 
-	buy = Buy(game_name)
+	buy = Buy(game_name, starts_price)
 
 	try:
 		db.session.add(buy)
@@ -51,7 +52,7 @@ def buy_game():
 		return redirect(url_for('shop.home'))
 
 	except:
-		print('Some error for save indatabase')
+		print('\nSome error for save in the database\n')
 		return redirect(url_for('shop.home'))
 
 

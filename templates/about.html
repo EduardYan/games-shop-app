@@ -1,6 +1,9 @@
 <!-- ABOUT PAGE -->
+
 {% extends 'layout.html' %} {% block content %}
+
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css/about.css') }}">
+
 <section class="card bg-dark">
   <div class="card-header">
     <h1 class="text-white text-center" style="font-weight: lighter;">
@@ -9,9 +12,11 @@
   </div>
   <div class="card-body">
     <p class="lead text-white text-center">
-      Games Shop is a web application for buy games using <span style="border-bottom: .5px solid #999;">no money</span>, if not using starts in a game.
+      Games Shop is a web application for buy games using <span style="border-bottom: .5px solid #999;">no money</span>, if not using starts in a game. <br> <br> Made for <a href="https://github.com/EduardYan" target="_blank" rel="noreferrer" id="programmer-link">Daniel Yanes.</a>
     </p>
+
     <img src="{{ url_for('static', filename = 'img/main/about-image.jpg') }}" alt="about-image">
   </div>
 </section>
+
 {% endblock %}
