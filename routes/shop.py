@@ -38,9 +38,9 @@ def buy_game():
 
 	# getting to show
 	game_name = request.form['game-name']
-	starts_price = int(request.form['starts-price'])
+	stars_price = int(request.form['stars-price'])
 
-	buy = Buy(game_name, starts_price)
+	buy = Buy(game_name, stars_price)
 
 	try:
 		db.session.add(buy)
