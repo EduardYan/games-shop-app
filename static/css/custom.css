@@ -50,7 +50,7 @@ body {
   column-gap: 2.5rem;
 }
 
-#games-view form {
+#games-view article {
   background: #4568DC;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
@@ -60,7 +60,7 @@ body {
   transition: transform .3s ease;
 }
 
-#games-view form:hover {
+#games-view article:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, .2);
 }
@@ -68,18 +68,18 @@ body {
 
 /* image for each game */
 
-#games-view form img {
+#games-view article img {
   width: 100%;
 }
 
 
 /* Buy button */
 
-#games-view form button {
+#games-view article button {
   background-color: #1780a1;
 }
 
-#games-view form button:hover {
+#games-view article button:hover {
   background-color: #0091ad;
 }
 
