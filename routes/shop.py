@@ -37,8 +37,8 @@ def buy_game():
 	"""
 
 	# getting to show
-	game_name = request.form['game-name']
-	stars_price = int(request.form['stars-price'])
+	game_name = request.form['gameName']
+	stars_price = int(request.form['starsPrice'])
 
 	buy = Buy(game_name, stars_price)
 
