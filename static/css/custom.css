@@ -21,7 +21,7 @@ body {
 
 /* Container */
 
-#main-container {
+#mainContainer {
   margin: 3rem auto 7rem;
 }
 
@@ -34,7 +34,7 @@ body {
   background-color: #2d6a4f;
 }
 
-#into-text {
+#infoText {
   font-size: 1.3rem;
   /* border-bottom: 1px solid #ccc; */
 }
@@ -42,7 +42,7 @@ body {
 
 /* Games view */
 
-#games-view {
+#gamesView {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -50,7 +50,7 @@ body {
   column-gap: 2.5rem;
 }
 
-#games-view article {
+#gamesView article {
   background: #4568DC;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
@@ -60,26 +60,30 @@ body {
   transition: transform .3s ease;
 }
 
-#games-view article:hover {
+#gamesView article:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, .2);
+}
+
+.price i {
+  color: #f8e553;
 }
 
 
 /* image for each game */
 
-#games-view article img {
+#gamesView article img {
   width: 100%;
 }
 
 
 /* Buy button */
 
-#games-view article button {
+#gamesView article button {
   background-color: #1780a1;
 }
 
-#games-view article button:hover {
+#gamesView article button:hover {
   background-color: #0091ad;
 }
 
@@ -103,14 +107,14 @@ body {
   }
 }
 
-#main-footer {
+#mainFooter {
   background-color: var(--nav-footer-bg);
 }
 
 
 /* Sociale links of footer */
 
-#social-links {
+#socialLinks {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -120,10 +124,10 @@ body {
 /* Responsive */
 
 @media (max-width: 900px) {
-  #into-text {
+  #infoText {
     text-align: center;
   }
-  #games-view {
+  #gamesView {
     column-gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -141,10 +145,10 @@ body {
 }
 
 @media (max-width: 700px) {
-  #into-text {
+  #infoText {
     text-align: center;
   }
-  #games-view {
+  #gamesView {
     column-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -154,17 +158,17 @@ body {
 }
 
 @media (max-width: 500px) {
-  #into-text {
+  #infoText {
     text-align: center;
   }
   /* change to one column */
-  #games-view {
+  #gamesView {
     grid-template-columns: 1fr;
   }
   .message {
     width: 95%;
   }
-  #social-links {
+  #socialLinks {
     flex-direction: column;
   }
 }
