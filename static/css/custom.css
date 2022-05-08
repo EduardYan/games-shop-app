@@ -39,6 +39,10 @@ body {
   /* border-bottom: 1px solid #ccc; */
 }
 
+header h2 {
+  font-weight: lighter;
+}
+
 
 /* Games view */
 
